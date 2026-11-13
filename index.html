@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <title>Dra. Hanna Pillmann · Estética avançada e harmonização facial</title>
+    <meta
+      name="description"
+      content="Farmacêutica em estética avançada e harmonização facial. Atendimento na Clínica Olavita, Centro de Florianópolis. Agende sua avaliação."
+    />
+    <meta name="theme-color" content="#6D001C" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 320'%3E%3Ccircle cx='160' cy='160' r='160' fill='%236D001C'/%3E%3Cg fill='%23F7F3EF' transform='translate(160 160) scale(0.82) translate(-104.5 -80)'%3E%3Crect x='40' y='20' width='14' height='120'/%3E%3Crect x='100' y='20' width='14' height='120'/%3E%3Crect x='54' y='76' width='46' height='4'/%3E%3Cpath fill-rule='evenodd' d='M114 20H132C160 20 176 34 176 50C176 66 160 80 132 80H114ZM114 24H130C150 24 160 36 160 50C160 64 150 76 130 76H114Z'/%3E%3Crect x='33' y='20' width='28' height='3'/%3E%3Crect x='33' y='137' width='28' height='3'/%3E%3Crect x='93' y='137' width='28' height='3'/%3E%3Crect x='93' y='20' width='10' height='3'/%3E%3C/g%3E%3C/svg%3E"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Dra. Hanna Pillmann · Estética avançada"
+    />
+    <meta
+      property="og:description"
+      content="A sua melhor versão, sem perder a sua essência. Agende sua avaliação na Clínica Olavita, Florianópolis."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --bordo-900: #3d0010;
+        --bordo-700: #6d001c;
+        --rose-antigo: #c9a5a6;
+        --nude: #eadfd8;
+        --marrom-900: #33241e;
+        --taupe: #8c7b70;
+        --greige: #d9d2cb;
+        --cinza-600: #6b6460;
+        --marfim: #f7f3ef;
+        --branco: #ffffff;
+        --ink: #1f1715;
+        --font-headline: "Instrument Serif", "DM Serif Display", Georgia, serif;
+        --font-deco: "Josefin Sans", "Century Gothic", Futura, sans-serif;
+        color-scheme: light;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-padding-top: env(safe-area-inset-top, 0px);
+      }
+      body {
+        margin: 0;
+        background: var(--marfim);
+        color: var(--ink);
+        font-family: var(--font-deco);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+        padding-top: env(safe-area-inset-top, 0px);
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+      }
+      img,
+      svg {
+        max-width: 100%;
+      }
+      a {
+        color: inherit;
+      }
+      .ac {
+        font-family: var(--font-headline);
+        font-style: italic;
+        font-weight: 400;
+        letter-spacing: 0;
+      }
+
+      .page {
+        max-width: 560px;
+        margin: 0 auto;
+        padding: 56px max(24px, env(safe-area-inset-left, 0px)) 48px
+          max(24px, env(safe-area-inset-right, 0px));
+        display: flex;
+        flex-direction: column;
+        min-height: 100svh;
+      }
+
+      .hero {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        padding-top: 12px;
+      }
+      .avatar {
+        width: 104px;
+        height: 104px;
+      }
+      .eyebrow {
+        font-size: 11px;
+        font-weight: 300;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: var(--cinza-600);
+      }
+      h1 {
+        font-family: var(--font-headline);
+        font-weight: 400;
+        font-size: clamp(40px, 10vw, 56px);
+        line-height: 1;
+        margin: 0;
+        letter-spacing: -0.01em;
+      }
+      .tagline {
+        font-weight: 300;
+        font-size: 17px;
+        max-width: 30ch;
+        margin: 0;
+        color: var(--marrom-900);
+      }
+      .tagline b {
+        font-weight: 600;
+      }
+
+      .ctas {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 8px;
+      }
+      .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 16px 20px;
+        font-family: var(--font-deco);
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 2px;
+        transition: opacity 0.2s;
+      }
+      .btn:hover,
+      .btn:focus-visible {
+        opacity: 0.88;
+      }
+      .btn:focus-visible {
+        outline: 2px solid var(--bordo-700);
+        outline-offset: 3px;
+      }
+      .btn-primary {
+        background: var(--bordo-700);
+        color: var(--marfim);
+      }
+      .btn-secondary {
+        background: transparent;
+        color: var(--bordo-700);
+        border: 1px solid var(--bordo-700);
+      }
+      .btn svg {
+        width: 18px;
+        height: 18px;
+        flex: none;
+      }
+
+      .about {
+        margin-top: 56px;
+        text-align: center;
+      }
+      .about p {
+        margin: 0;
+        font-size: 15px;
+        color: var(--marrom-900);
+        max-width: 42ch;
+        margin-inline: auto;
+      }
+
+      .services {
+        margin-top: 36px;
+      }
+      .services h2 {
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+        color: var(--cinza-600);
+        text-align: center;
+        margin: 0 0 14px;
+      }
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+      }
+      .chip {
+        font-size: 12.5px;
+        padding: 8px 14px;
+        background: var(--nude);
+        color: var(--bordo-700);
+        letter-spacing: 0.02em;
+        white-space: nowrap;
+      }
+
+      .location {
+        margin-top: 44px;
+        text-align: center;
+        border-top: 1px solid var(--greige);
+        padding-top: 32px;
+      }
+      .location p {
+        margin: 0;
+        font-size: 14px;
+        color: var(--cinza-600);
+        line-height: 1.7;
+      }
+      .location a {
+        text-decoration: underline;
+        text-decoration-color: var(--taupe);
+        text-underline-offset: 3px;
+      }
+      .insta {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        margin-top: 10px;
+        font-size: 13px;
+        color: var(--bordo-700);
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+      }
+      .insta svg {
+        width: 15px;
+        height: 15px;
+      }
+
+      footer {
+        margin-top: auto;
+        padding-top: 40px;
+        text-align: center;
+      }
+      .foot-mono {
+        width: 30px;
+        height: 30px;
+        margin: 0 auto 10px;
+      }
+      footer .nm {
+        font-size: 11px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--bordo-700);
+      }
+      footer .nm b {
+        font-weight: 600;
+      }
+      footer .sub {
+        font-size: 10.5px;
+        color: var(--cinza-600);
+        margin-top: 4px;
+        letter-spacing: 0.04em;
+      }
+
+      @media (prefers-reduced-motion: no-preference) {
+        .btn {
+          transition: opacity 0.2s;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol id="hp" viewBox="23 10 163 140">
+        <rect x="40" y="20" width="14" height="120" />
+        <rect x="100" y="20" width="14" height="120" />
+        <rect x="54" y="76" width="46" height="4" />
+        <path
+          fill-rule="evenodd"
+          d="M114 20H132C160 20 176 34 176 50C176 66 160 80 132 80H114ZM114 24H130C150 24 160 36 160 50C160 64 150 76 130 76H114Z"
+        />
+        <rect x="33" y="20" width="28" height="3" />
+        <rect x="33" y="137" width="28" height="3" />
+        <rect x="93" y="137" width="28" height="3" />
+        <rect x="93" y="20" width="10" height="3" />
+      </symbol>
+      <symbol id="avatar" viewBox="0 0 320 320">
+        <circle cx="160" cy="160" r="160" fill="#6D001C" />
+        <g
+          fill="#F7F3EF"
+          transform="translate(160 160) scale(0.82) translate(-104.5 -80)"
+        >
+          <rect x="40" y="20" width="14" height="120" />
+          <rect x="100" y="20" width="14" height="120" />
+          <rect x="54" y="76" width="46" height="4" />
+          <path
+            fill-rule="evenodd"
+            d="M114 20H132C160 20 176 34 176 50C176 66 160 80 132 80H114ZM114 24H130C150 24 160 36 160 50C160 64 150 76 130 76H114Z"
+          />
+          <rect x="33" y="20" width="28" height="3" />
+          <rect x="33" y="137" width="28" height="3" />
+          <rect x="93" y="137" width="28" height="3" />
+          <rect x="93" y="20" width="10" height="3" />
+        </g>
+      </symbol>
+    </svg>
+
+    <div class="page">
+      <header class="hero">
+        <svg
+          class="avatar"
+          viewBox="0 0 320 320"
+          role="img"
+          aria-label="Monograma Hanna Pillmann"
+        >
+          <use href="#avatar" />
+        </svg>
+        <span class="eyebrow">Dra. Hanna Pillmann</span>
+        <h1>Hanna<br />Pillmann</h1>
+        <p class="tagline">
+          A sua melhor versão,
+          <span class="ac">sem perder a sua essência.</span>
+        </p>
+
+        <div class="ctas">
+          <a
+            class="btn btn-primary"
+            href="https://wa.me/5547988041442?text=Oi%2C%20Hanna!%20Vim%20pelo%20Instagram%20e%20quero%20agendar%20uma%20avalia%C3%A7%C3%A3o"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.46 3.45 1.26 4.9L2 22l5.25-1.38a9.95 9.95 0 0 0 4.79 1.22h.01c5.52 0 10-4.48 10-10s-4.48-10-10.01-10zm0 18.17h-.01a8.3 8.3 0 0 1-4.24-1.16l-.3-.18-3.12.82.83-3.04-.2-.31a8.26 8.26 0 0 1-1.27-4.4c0-4.58 3.73-8.31 8.32-8.31 2.22 0 4.31.87 5.88 2.44a8.26 8.26 0 0 1 2.44 5.88c0 4.58-3.73 8.26-8.33 8.26zm4.56-6.2c-.25-.13-1.47-.73-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.78.98-.14.17-.29.19-.54.06-.25-.13-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.71-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.6.13.17 1.77 2.7 4.29 3.79.6.26 1.07.42 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.17-.48-.29z"
+              />
+            </svg>
+            Chamar no WhatsApp
+          </a>
+        </div>
+      </header>
+
+      <section class="about">
+        <p>
+          Farmacêutica em estética avançada e harmonização facial. Planejamento
+          pensado pro seu rosto e pra sua expressão, com naturalidade e técnica.
+        </p>
+      </section>
+
+      <section class="services">
+        <h2>Procedimentos</h2>
+        <div class="chips">
+          <span class="chip">Botox</span>
+          <span class="chip">Preenchimentos</span>
+          <span class="chip">Limpeza de pele</span>
+          <span class="chip">Peeling químico</span>
+          <span class="chip">Microagulhamento</span>
+          <span class="chip">Gerenciamento de Pele</span>
+          <span class="chip">Tratamento de Cicatrizes</span>
+          <span class="chip">Tratamento de Flacidez Facial</span>
+        </div>
+      </section>
+
+      <section class="location">
+        <p>
+          Clínica Olavita · Centro, Florianópolis/SC<br />próximo ao Shopping
+          Beira Mar
+        </p>
+        <p>
+          <a
+            href="https://www.google.com/maps/search/?api=1&q=Cl%C3%ADnica+Olavita+Florian%C3%B3polis"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ver no mapa</a
+          >
+        </p>
+        <a
+          class="insta"
+          href="https://www.instagram.com/dra.hannapillmann/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            aria-hidden="true"
+          >
+            <rect x="3" y="3" width="18" height="18" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.2" cy="6.8" r="1" />
+          </svg>
+          @dra.hannapillmann
+        </a>
+      </section>
+
+      <footer>
+        <svg
+          class="foot-mono"
+          viewBox="23 10 163 140"
+          role="img"
+          aria-label="Hanna Pillmann"
+          style="fill: var(--bordo-700)"
+        >
+          <use href="#hp" />
+        </svg>
+        <div class="nm">Dra. <b>Hanna</b> Pillmann</div>
+        <div class="sub">Farmacêutica · CRF-SC 24770</div>
+      </footer>
+    </div>
+  </body>
+</html>
